@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mern stack bootcamp</title>
+</head>
+<style>
+    #tool
+    {
+        background-color: aqua;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    table,th,td,tr{
+        border: solid;
+        border-color: black;
+        
+    }
+    div{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    button{
+        margin: 10px;
+    }
+</style>
+<body style="background-color:wheat;">
+    <h1 style="text-align: center;">Marks</h1>
+    <table>
+        <th>subject</th>
+        <th>marks</th>
+        <tr>
+            <td>English</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Tamil</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td>total</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <button id="tool">calculate total</button>
+    <br>
+    <h1>stopwatch</h1>
+    <div>
+        <p id="qwe">0</p>
+        <p id="wer">:0</p>
+        <p id="ert">:0</p>
+    </div>
+    <div style="margin: 50px;">
+        <button id="hi">start</button>
+        <button id="hello">stop</button>
+        <button id="just">reset</button>
+    </div>
+    <p id="sss"></p>
+    
+    <script src="index.js"></script>
+</body>
+</html>
