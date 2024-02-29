@@ -221,7 +221,7 @@ buttonElement.onclick=() => {
     intervalId = setInterval(() => {
       hour.textContent=hour1
       minute.textContent=':'+minute2
-      count++;
+      count++; 
       second.textContent = ':'+count
       if(count==60) 
       {
@@ -233,7 +233,7 @@ buttonElement.onclick=() => {
         hour.textContent = hour1+=1
         minute2=0
       }
-    }, 1); 
+    }, 1000); 
 
     isButtonClicked = false;
 
@@ -259,7 +259,11 @@ button3.onclick =() => {
   minute.textContent=':'+minute2
   second.textContent = ':'+count
   clearInterval(intervalId)*/
-  k.textContent = hour1+':'+minute2+':'+count;
+  const lapTime = `Minute: ${minute2} | Seconds: ${count}`;
+  const lapDiv = document.createElement('div');
+  lapDiv.innerHTML = `<p>${lapTime}</p>`
+ document.body.append(lapDiv)
+
 };
 const obh={
   name:"gokul",
@@ -274,7 +278,17 @@ console.log(mobile)
 
 
 
-
+ let num;
+ new Promise((resolve)=>
+ {
+  setTimeout(()=>
+ {
+  num = 10
+  resolve()
+ },1000)
+ }).then()
+ 
+ console.log(num)
 
 
 
